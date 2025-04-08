@@ -1,0 +1,12 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="TopikApp.MainWindow"
+        Title="TOPIK Practice App" 
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen" av:DesignHeight="381.585" av:DesignWidth="702.068">
+    <Grid>
+        <!-- Content sẽ được thay đổi động thông qua Navigation Service -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>

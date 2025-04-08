@@ -1,0 +1,15 @@
+﻿{
+  "Title": "TOPIK I - Practice Test 1",
+  "Level": 1,
+  "TimeLimit": 60,
+  "Questions": [
+    {
+      "Content": "다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.",
+      "Option1": "가까이",
+      "Option2": "멀리",
+      "Option3": "빨리",
+      "Option4": "천천히",
+      "CorrectAnswer": 1
+    }
+  ]
+}
