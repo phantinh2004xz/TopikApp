@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows;
+using System.Windows.Controls;
+using TopikApp.ViewModels;
 
 namespace TopikApp.Views
 {
-    class LoginWindow
+    public partial class LoginWindow : Window
     {
+        public LoginWindow()
+        {
+            InitializeComponent();
+            DataContext = new LoginViewModel();
+        }
+
+        private void txtPassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is LoginViewModel vm)
+                vm.Password = ((PasswordBox)sender).Password;
+        }
     }
 }

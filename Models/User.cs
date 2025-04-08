@@ -10,18 +10,14 @@ namespace TopikApp.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(50, MinimumLength = 4)]
         public string Username { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string Password { get; set; } // Lưu ý: Nên mã hóa (hash) mật khẩu
+        [StringLength(100, MinimumLength = 6)]
+        public string Password { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string Role { get; set; } // "Admin" hoặc "User"
-
-        // Quan hệ 1-N với ExamResult
-        public ICollection<ExamResult> ExamResults { get; set; }
+        public string Role { get; set; } = "User"; // Default role
     }
 }
