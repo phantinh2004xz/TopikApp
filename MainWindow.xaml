@@ -1,0 +1,44 @@
+﻿<Window x:Class="TopikApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chào mừng đến với TOPIK" 
+        Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF0F5FF">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Phần giới thiệu -->
+        <StackPanel Grid.Column="0" Margin="20" VerticalAlignment="Center">
+            <Image Source="/Resources/topik_logo.png" Width="150" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock Text="Kỳ Thi Năng Lực Tiếng Hàn (TOPIK)" FontSize="22" FontWeight="Bold" Foreground="#FF2C3E50" TextAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock Text="TOPIK là kỳ thi đánh giá năng lực tiếng Hàn quan trọng..." FontSize="14" TextWrapping="Wrap" Foreground="#FF34495E" Margin="0,0,0,20"/>
+            <Border BorderBrush="#FF3498DB" BorderThickness="1" CornerRadius="5" Padding="10">
+                <TextBlock Text="📌 Hãy đăng nhập để bắt đầu làm bài thi thử!" FontSize="13" FontStyle="Italic" Foreground="#FF2980B9"/>
+            </Border>
+        </StackPanel>
+
+        <!-- Nút chức năng -->
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnLogin" Content="ĐĂNG NHẬP" 
+                    Width="200" Height="40" Margin="0,0,0,15"
+                    Background="#FF3498DB" Foreground="White"
+                    FontSize="14" FontWeight="Bold"
+                    BorderBrush="Transparent"
+                    Click="BtnLogin_Click"/>
+
+            <Button x:Name="btnRegister" Content="ĐĂNG KÝ TÀI KHOẢN" 
+                    Width="200" Height="40"
+                    Background="#FF2ECC71" Foreground="White"
+                    FontSize="14" FontWeight="Bold"
+                    BorderBrush="Transparent"
+                    Click="BtnRegister_Click"/>
+
+            <Image Source="/Resources/korean_exam.png" Width="250" Margin="0,30,0,0" Opacity="0.8"/>
+        </StackPanel>
+    </Grid>
+</Window>

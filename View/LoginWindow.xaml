@@ -1,0 +1,26 @@
+﻿<Window x:Class="TopikApp.View.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Đăng nhập" Height="250" Width="350"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+	<Grid Margin="20">
+		<StackPanel VerticalAlignment="Center">
+			<TextBlock Text="Tên đăng nhập:" FontWeight="Bold"/>
+			<TextBox x:Name="txtUsername" Margin="0,5"/>
+
+			<TextBlock Text="Mật khẩu:" FontWeight="Bold" Margin="0,10,0,0"/>
+			<PasswordBox x:Name="txtPassword" Margin="0,5"/>
+
+			<Button Content="Đăng nhập"
+                    Margin="0,15,0,0"
+                    Background="#3498DB"
+                    Foreground="White"
+                    Click="BtnLogin_Click"/>
+
+			<Button Content="Đăng ký tài khoản mới"
+                    Margin="0,5,0,0"
+                    Click="BtnRegister_Click"/>
+		</StackPanel>
+	</Grid>
+</Window>

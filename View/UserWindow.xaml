@@ -1,0 +1,13 @@
+﻿<Window x:Class="TopikApp.View.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trang Người Dùng" Height="300" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#FAFAFA">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Chào mừng người dùng!" FontSize="20" FontWeight="Bold" Margin="0,0,0,20"/>
+            <Button Content="Làm bài thi" Width="200" Height="40" Margin="0,10"/>
+            <Button Content="Xem kết quả của tôi" Width="200" Height="40" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>

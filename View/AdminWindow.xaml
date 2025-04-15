@@ -1,0 +1,38 @@
+﻿<Window x:Class="TopikApp.View.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quản Lý Admin" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <!-- Quản lý đề thi -->
+            <TabItem Header="Quản Lý Đề Thi">
+                <StackPanel>
+                    <Button Content="Thêm Đề Thi" Width="150" Margin="10" Click="AddExamButton_Click"/>
+                    <Button Content="Sửa Đề Thi" Width="150" Margin="10" Click="EditExamButton_Click"/>
+                    <Button Content="Xóa Đề Thi" Width="150" Margin="10" Click="DeleteExamButton_Click"/>
+                    <TextBlock Text="Danh sách câu hỏi" Margin="10"/>
+                    <ListBox Name="ExamQuestionsList" Width="750" Height="200" Margin="10"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Quản lý tài khoản người dùng -->
+            <TabItem Header="Quản Lý Tài Khoản">
+                <StackPanel>
+                    <Button Content="Khóa Tài Khoản" Width="150" Margin="10" Click="LockAccountButton_Click"/>
+                    <Button Content="Xóa Tài Khoản" Width="150" Margin="10" Click="DeleteAccountButton_Click"/>
+                    <TextBlock Text="Danh sách tài khoản" Margin="10"/>
+                    <ListBox Name="UserAccountsList" Width="750" Height="200" Margin="10"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Xem kết quả thi -->
+            <TabItem Header="Xem Kết Quả Thi">
+                <StackPanel>
+                    <Button Content="Xem Kết Quả" Width="150" Margin="10" Click="ViewResultsButton_Click"/>
+                    <TextBlock Text="Danh sách kết quả thi" Margin="10"/>
+                    <ListBox Name="ExamResultsList" Width="750" Height="200" Margin="10"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
